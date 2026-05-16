@@ -21,7 +21,9 @@ public class SometimeTurn : MonoBehaviour
 		count = count + 1; // カウンターに1を足して
 		if (count >= maxCount)  // もし、maxCountになったら
 		{
-			transform.Rotate(0, 0, angle); // 回転して曲がる
+			int rand_angle = Random.Range(0, 360);
+			transform.Rotate(0, 0, (float)rand_angle); // 回転して曲がる			
+// 			transform.Rotate(0, 0, angle); // 回転して曲がる
 			count = 0; // カウンターをリセット
 		}
 	}
