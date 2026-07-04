@@ -1313,7 +1313,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2292251669237798836, guid: f72dc70297555ed4db13dee48c8f31f3, type: 3}
-  m_Color: {r: 0.6886792, g: 0, b: 0.55046964, a: 1}
+  m_Color: {r: 1, g: 0.016531587, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
