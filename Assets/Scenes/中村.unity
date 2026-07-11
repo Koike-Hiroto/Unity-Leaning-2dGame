@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 10856015}
   - component: {fileID: 10856014}
   - component: {fileID: 10856013}
+  - component: {fileID: 10856020}
   m_Layer: 0
   m_Name: kuiiji_1_0 (2)
   m_TagString: Untagged
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10856012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8742ea81bc167eb44b4779220efdb670, type: 3}
   m_Name: 
@@ -332,6 +333,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &10856020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10856012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570460addada8b3448d34a9935937c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnCollisionStopGameAndLoadScece
+  targetObject: {fileID: 1051717024}
+  tagName: 
+  sceneName: caina7
 --- !u!1 &36309829
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +363,7 @@ GameObject:
   - component: {fileID: 36309832}
   - component: {fileID: 36309831}
   - component: {fileID: 36309830}
+  - component: {fileID: 36309837}
   m_Layer: 0
   m_Name: kuiiji_1_0 (1)
   m_TagString: Untagged
@@ -361,7 +378,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36309829}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8742ea81bc167eb44b4779220efdb670, type: 3}
   m_Name: 
@@ -545,6 +562,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &36309837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36309829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570460addada8b3448d34a9935937c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnCollisionStopGameAndLoadScece
+  targetObject: {fileID: 1051717024}
+  tagName: 
+  sceneName: caina7
 --- !u!1 &69083761
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +682,7 @@ GameObject:
   - component: {fileID: 153703929}
   - component: {fileID: 153703928}
   - component: {fileID: 153703927}
+  - component: {fileID: 153703933}
   m_Layer: 0
   m_Name: block_11_0
   m_TagString: Untagged
@@ -664,7 +697,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153703926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8742ea81bc167eb44b4779220efdb670, type: 3}
   m_Name: 
@@ -833,6 +866,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &153703933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153703926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570460addada8b3448d34a9935937c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnCollisionStopGameAndLoadScece
+  targetObject: {fileID: 325805287}
+  tagName: 
+  sceneName: japp6
 --- !u!1 &165164076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1216,7 @@ GameObject:
   - component: {fileID: 325805288}
   - component: {fileID: 325805294}
   - component: {fileID: 325805293}
+  - component: {fileID: 325805295}
   m_Layer: 0
   m_Name: kuiiji_1_0
   m_TagString: Untagged
@@ -1331,7 +1380,7 @@ Transform:
   m_GameObject: {fileID: 325805287}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.98, y: -2.96, z: 0}
+  m_LocalPosition: {x: 5.98, y: -3.01, z: 0}
   m_LocalScale: {x: 1.9818, y: 2.2465, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1344,7 +1393,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325805287}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8742ea81bc167eb44b4779220efdb670, type: 3}
   m_Name: 
@@ -1366,6 +1415,21 @@ MonoBehaviour:
   targetObject: {fileID: 1051717024}
   tagName: 
   showObject: {fileID: 69083761}
+--- !u!114 &325805295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325805287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570460addada8b3448d34a9935937c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnCollisionStopGameAndLoadScece
+  targetObject: {fileID: 1051717024}
+  tagName: 
+  sceneName: caina7
 --- !u!1 &335159650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,6 +2636,7 @@ GameObject:
   - component: {fileID: 1854681051}
   - component: {fileID: 1854681050}
   - component: {fileID: 1854681049}
+  - component: {fileID: 1854681056}
   m_Layer: 0
   m_Name: kuiiji_1_0 (3)
   m_TagString: Untagged
@@ -2770,6 +2835,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1854681056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854681048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570460addada8b3448d34a9935937c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnCollisionStopGameAndLoadScece
+  targetObject: {fileID: 1051717024}
+  tagName: 
+  sceneName: caina7
 --- !u!1 &1955079751
 GameObject:
   m_ObjectHideFlags: 0

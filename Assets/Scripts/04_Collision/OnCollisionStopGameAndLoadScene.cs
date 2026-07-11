@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // 衝突すると、ゲームをストップする
-public class OnCollisionStopGame : MonoBehaviour 
+public class OnCollisionStopGameAndLoadScece : MonoBehaviour 
 {
 	//-------------------------------------
 	public GameObject targetObject; //［目標オブジェクト］
 	public string tagName; //［タグ名］
+	public string sceneName; //［シーン名］
 	//-------------------------------------
 
 	void Start ()
@@ -23,6 +25,9 @@ public class OnCollisionStopGame : MonoBehaviour
 		{
 			//Time.timeScale = 0; // 時間を止める
 			//joy.banana.yees! oh kabutomusi
+			// シーンを切り替える
+			SceneManager.LoadScene(sceneName);
+			
 		}
 	}
 }
