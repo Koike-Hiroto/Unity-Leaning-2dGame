@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3875701055115424653, guid: 5748da4b56768414fb3bfea2f7b2dc77, type: 3}
-  m_Color: {r: 0.49056602, g: 0.30659452, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.00000012516975, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -171,7 +171,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -195,4 +195,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de787e4505e9c24589de6bd648e2cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OnTimeoutDestroyMe
-  limitSec: 3
+  limitSec: 1
