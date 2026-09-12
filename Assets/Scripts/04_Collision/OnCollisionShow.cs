@@ -13,15 +13,29 @@ public class OnCollisionShow : MonoBehaviour
 
 	void Start()
 	{
-    	showObject.SetActive(false); // 非表示にする
+		if (showObject != null)
+		{
+			showObject.SetActive(false); // 非表示にする
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) { // 衝突したとき
+		if (showObject == null) return;
+
 		// 衝突したものが、目標オブジェクトか、タグ名なら
 		if (collision.gameObject == targetObject ||
 			collision.gameObject.tag == tagName) 
 		{
-    		showObject.SetActive(true); // 表示する
+			var cameraManager = FindFirstObjectByType<CameraManager>();
+			if (cameraManager != null)
+			{
+				cameraManager.hetakusosennyouMode = cameraManager.hetakusosennyouMode - 100000000; // 弱者救済モードを有効にする
+				Debug.Log("hetakusosennyouMode: " + cameraManager.hetakusosennyouMode);
+				if (cameraManager.hetakusosennyouMode <= 0)
+				{
+					showObject.SetActive(true); // 表示する
+				}
+			}
 		}
 	}
 }

@@ -13,7 +13,14 @@ public class GameCounter : MonoBehaviour
 
 	void Start()
 	{
-		counters[kind] = startCount;
+		if (!counters.ContainsKey(kind))
+		{
+			counters.Add(kind, startCount);
+		}
+		else
+		{
+			counters[kind] = startCount;
+		}
 	}
 }
 public enum CounterType { // カウンターの種類

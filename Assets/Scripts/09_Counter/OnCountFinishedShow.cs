@@ -14,15 +14,21 @@ public class OnCountFinishedShow : MonoBehaviour
 
 	void Start()
 	{
-    	showObject.SetActive(false); // 非表示にする
+		if (showObject != null)
+		{
+			showObject.SetActive(false); // 非表示にする
+		}
 	}
 
 	void Update()
 	{
+		if (showObject == null) return;
+		if (!GameCounter.counters.ContainsKey(kind)) return;
+
 		// カウンターが最終値になったら
-		if (GameCounter.counters[kind] == lastCount) 
+		if (GameCounter.counters[kind] == lastCount)
 		{
-    		showObject.SetActive(true); // 表示する
+			showObject.SetActive(true); // 表示する
 		}
 	}
 }

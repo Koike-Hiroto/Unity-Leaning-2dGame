@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 // カメラが動くものを追いかける
@@ -10,12 +11,14 @@ public class CameraManager : MonoBehaviour
     public bool followHOnly = true; //［水平追跡のみ］
     public bool smoothFollow = false; //［滑らかフラグ］
     public float smoothSpeed = 4f; //［滑らか度］
+    public int hetakusosennyouMode = 1000000000; //［弱者救済モード］
+    public TMP_Text tomatoobject; //［追跡対象］
 	//-------------------------------------
 
     void LateUpdate() {
         if (player == null) return; // プレイヤーがいないなら終了
         Vector3 playerPos = player.transform.position;
-        Vector3 desiredPos;
+        Vector3 desiredPos; 
         float vx = playerPos.x + offset.x;
         float vz = transform.position.z;
         if (vx < xlimit) vx = xlimit;
@@ -36,6 +39,12 @@ public class CameraManager : MonoBehaviour
         else 
         {
             transform.position = desiredPos;
+            // player が消えるとここに来ないので表示が変化しない
+            if (tomatoobject != null)
+            {
+                tomatoobject.SetText("HP:" + hetakusosennyouMode.ToString());
+                tomatoobject.transform.position = new Vector3(playerPos.x, playerPos.y, tomatoobject.transform.position.z);
+            }
         }
     }
 }
