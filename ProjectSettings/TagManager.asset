@@ -6,6 +6,10 @@ TagManager:
   tags:
   - New tag
   - enemy
+  - friend
+  - family
+  - MyChara
+  - family2
   layers:
   - Default
   - TransparentFX

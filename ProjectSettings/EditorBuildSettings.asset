@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/japp6.unity
     guid: 758ad26637e92a74484981e4140b6467
+  - enabled: 1
+    path: Assets/Scenes/9-3.141592.unity
+    guid: df6bc602bcfa0984581c6f27b6154ecb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0

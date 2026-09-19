@@ -13,12 +13,24 @@ public class CameraManager : MonoBehaviour
     public float smoothSpeed = 4f; //［滑らか度］
     public int hetakusosennyouMode = 1000000000; //［弱者救済モード］
     public TMP_Text tomatoobject; //［追跡対象］
+	private GameObject myCharObject;
 	//-------------------------------------
 
+    void Start()
+    {
+        myCharObject = GameObject.Find("block_09_0");
+        if (myCharObject == null)
+        {
+            Debug.LogError("My character object not found in the scene.");
+        }
+    }
     void LateUpdate() {
+        tomatoobject.gameObject.SetActive(myCharObject.activeSelf); // 自分のキャラクターが非表示なら、追跡対象も非表示にする    
+        
         if (player == null) return; // プレイヤーがいないなら終了
+
         Vector3 playerPos = player.transform.position;
-        Vector3 desiredPos; 
+        Vector3 desiredPos;
         float vx = playerPos.x + offset.x;
         float vz = transform.position.z;
         if (vx < xlimit) vx = xlimit;

@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 6419838833129504858}
   - component: {fileID: 2024315184204343997}
   - component: {fileID: 8903714454916235108}
+  - component: {fileID: -412387132069052843}
   m_Layer: 0
   m_Name: block_09_0 (2)
-  m_TagString: Untagged
+  m_TagString: friend
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,3 +197,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OnTimeoutDestroyMe
   limitSec: 2
+--- !u!114 &-412387132069052843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066407975796974833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfeb86f19466c5842b86f0a61f77767d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnCollisionDestory
+  targetObject: {fileID: 0}
+  tagName: MyChara
+  destroyOption: 0

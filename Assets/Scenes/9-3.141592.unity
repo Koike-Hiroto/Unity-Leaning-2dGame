@@ -998,10 +998,9 @@ GameObject:
   - component: {fileID: 577297452}
   - component: {fileID: 577297459}
   - component: {fileID: 577297458}
-  - component: {fileID: 577297460}
   m_Layer: 0
   m_Name: block_09_0
-  m_TagString: Untagged
+  m_TagString: MyChara
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1228,21 +1227,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OnCollisionStopGame
   targetObject: {fileID: 0}
   tagName: enemy
---- !u!114 &577297460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577297451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfeb86f19466c5842b86f0a61f77767d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OnCollisionDestory
-  targetObject: {fileID: 577297451}
-  tagName: enemy
-  destroyOption: 0
 --- !u!1 &651505716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,7 +1887,7 @@ MonoBehaviour:
   followHOnly: 1
   smoothFollow: 0
   smoothSpeed: 4
-  hetakusosennyouMode: 1000000001
+  hetakusosennyouMode: 1000000000
   tomatoobject: {fileID: 1096898533}
 --- !u!1 &1062044153
 GameObject:
@@ -1937,7 +1921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OnCollisionShow
   targetObject: {fileID: 577297451}
-  tagName: 
+  tagName: gameclear
   showObject: {fileID: 651505716}
 --- !u!61 &1062044155
 BoxCollider2D:
@@ -2818,7 +2802,7 @@ GameObject:
   - component: {fileID: 1654435860}
   m_Layer: 0
   m_Name: kuiiji_0_0
-  m_TagString: enemy
+  m_TagString: family2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
